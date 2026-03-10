@@ -147,9 +147,15 @@ document.querySelectorAll('.lang-card').forEach((el, i) => {
 // Observe all fade-in elements (re-query to include newly added ones)
 document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 
-// Prevent scrolling to hash on page load
-window.addEventListener('load', () => {
-  if (window.location.hash) {
-    history.replaceState(null, null, window.location.pathname + window.location.search);
-  }
+// Smooth scroll for all anchor links without changing URL
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
 });
