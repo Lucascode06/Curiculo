@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Alves — Desenvolvedor Web</title>
+
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVEGAÇÃO ===================== -->
+  <nav class="barra-navegacao" id="barra-navegacao">
+    <div class="navegacao-interna">
+      <a href="#inicio" class="logo-navegacao">LA<span class="dot">.</span></a>
+      <button class="botao-menu" id="alternar-menu" aria-label="Alternar menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="links-menu" id="menu-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#idiomas">Idiomas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== APRESENTAÇÃO ===================== -->
+  <section class="heroi" id="inicio">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">👋 Olá, eu sou</span>
+      <h1 class="hero-name">Lucas Alves</h1>
+      <h2 class="hero-title">
+        <span class="typing-text" id="texto-digitacao"></span><span class="cursor">|</span>
+      </h2>
+      <div class="hero-meta">
+      <span><i class="fa-solid fa-cake-candles"></i> 19 anos</span>
+      <span><i class="fa-solid fa-location-dot"></i> Joinville, SC, Brasil</span>
+      <span><i class="fa-solid fa-envelope"></i> dalcanalelucas06@gmail.com</span>
+      </div>
+      <p class="hero-intro">
+      Sou um desenvolvedor web apaixonado por criar aplicações web limpas, modernas e funcionais.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+      <a href="#contato" class="btn btn-primary">
+        <i class="fa-solid fa-paper-plane"></i> Entre em Contato
+      </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Rolar</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="secao" id="sobre">
+    <div class="container">
+      <div class="cabecalho-secao fade-in">
+        <span class="rotulo-secao">01 — Sobre</span>
+        <h2 class="titulo-secao">Sobre Mim</h2>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <blockquote class="about-text">
+          "Busco oportunidade na área de tecnologia para desenvolver minhas habilidades em desenvolvimento web e programação."
+        </blockquote>
+        <p class="about-sub">
+          Baseado em Joinville, Brasil, sou um desenvolvedor de 19 anos atualmente concluindo meu Curso Técnico em Desenvolvimento de Sistemas no SENAI. Gosto de transformar ideias em experiências interativas através do código.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCAÇÃO ===================== -->
+  <section class="secao secao-alt" id="educacao">
+    <div class="container">
+      <div class="cabecalho-secao fade-in">
+        <span class="rotulo-secao">02 — Educação</span>
+        <h2 class="titulo-secao">Educação</h2>
+      </div>
+      <div class="timeline fade-in">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-body">
+              <span class="timeline-badge">Curso Técnico</span>
+              <h3>Desenvolvimento de Sistemas</h3>
+              <p class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i>
+                SENAI – Serviço Nacional de Aprendizagem Industrial
+              </p>
+              <p class="timeline-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Joinville, SC — Brasil
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HABILIDADES ===================== -->
+  <section class="secao" id="habilidades">
+    <div class="container">
+      <div class="cabecalho-secao fade-in">
+        <span class="rotulo-secao">03 — Habilidades</span>
+        <h2 class="titulo-secao">Habilidades</h2>
+      </div>
+      <div class="skills-grid fade-in">
+
+        <div class="skill-card">
+          <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
+          <span>HTML</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon css"><i class="fa-brands fa-css3-alt"></i></div>
+          <span>CSS</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon js"><i class="fa-brands fa-js"></i></div>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon php"><i class="fa-brands fa-php"></i></div>
+          <span>PHP</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon db"><i class="fa-solid fa-database"></i></div>
+          <span>Modelagem de Banco de Dados</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon web"><i class="fa-solid fa-globe"></i></div>
+          <span>Desenvolvimento Web</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon logic"><i class="fa-solid fa-diagram-project"></i></div>
+          <span>Lógica de Programação</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETOS ===================== -->
+  <section class="secao secao-alt" id="projetos">
+    <div class="container">
+      <div class="cabecalho-secao fade-in">
+        <span class="rotulo-secao">04 — Projetos</span>
+        <h2 class="titulo-secao">Projetos</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card fade-in">
+          <div class="project-visual proj-1">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="project-body">
+            <span class="project-number">01</span>
+            <h3>Sistema de Criação de Trem</h3>
+            <p>Um sistema web para criação de trens, desenvolvido com HTML, CSS, PHP e SQL, criado por 4 desenvolvedores durante a época da escola.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>PHP</span><span>SQL</span>
+            </div>
+            <a href="https://github.com/Lucascode06/sa-thomas-o-trem.git" target="_blank" class="btn btn-outline" style="margin-top: 10px; display: inline-block;">
+              <i class="fa-brands fa-github"></i> Ver no GitHub
+            </a>
+          </div>
+          <div class="project-hover-line"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== IDIOMAS ===================== -->
+  <section class="secao" id="idiomas">
+    <div class="container">
+      <div class="cabecalho-secao fade-in">
+        <span class="rotulo-secao">05 — Idiomas</span>
+        <h2 class="titulo-secao">Idiomas</h2>
+      </div>
+      <div class="lang-grid fade-in">
+
+        <div class="lang-card">
+          <div class="lang-flag">🇧🇷</div>
+          <div class="lang-info">
+            <h3>Português</h3>
+            <span class="lang-level native">Nativo</span>
+          </div>
+          <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+        </div>
+
+        <div class="lang-card">
+          <div class="lang-flag">🇺🇸</div>
+          <div class="lang-info">
+            <h3>Inglês</h3>
+            <span class="lang-level basic">Básico</span>
+          </div>
+          <div class="lang-bar"><div class="lang-fill" style="width:30%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="secao secao-alt" id="contato">
+    <div class="container">
+      <div class="cabecalho-secao fade-in">
+        <span class="rotulo-secao">06 — Contato</span>
+        <h2 class="titulo-secao">Entre em Contato</h2>
+      </div>
+      <div class="contact-wrap fade-in">
+        <p class="contact-intro">
+          Atualmente estou aberto a novas oportunidades. Se você tiver uma pergunta ou apenas quiser dizer olá — minha caixa de entrada está sempre aberta.
+        </p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>dalcanalelucas06@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Joinville, SC — Brasil</span>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:dalcanalelucas06@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Enviar E-mail
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="container">
+      <p>© 2026 <strong>Lucas Alves</strong> — Desenvolvedor Web</p>
+      <p class="sub-rodape">Desenvolvido com HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
